@@ -33,9 +33,29 @@ if (isset($_SESSION['admin_login']))
                    <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
                    <input type="password" class="form-control" name="Password" placeholder="Password" required=""/>
 
-                   <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit">Login</button>
+                   <button class="btn btn-lg btn-primary btn-block"  name="SubmitBtn" value="Login" type="Submit">Login</button>
                </form>
            </div>
        </div>
-<?php include 'footer.php';
+<?php include 'footer.php'; ?>
+
+<?php
+include 'connect/dbconnect.php';
+if(!isset($_SESSION['admin_login'])){
+    if(isset($_REQUEST['SubmitBtn'])){
+        $sql="SELECT * FROM admin WHERE id='1'";
+        $result=mysql_query($sql);
+        $rws= mysql_fetch_array($result);
+        $username= mysql_real_escape_string($_REQUEST['uname']);
+        $password= mysql_real_escape_string($_REQUEST['pwd']);
+        if($username==$rws[8] && $password==$rws[9]){
+            $_SESSION['admin_login']=1;
+         header('location:admin_homepage.php');}
+        else
+         heder('location:adminlogin.php');
+        }
+    }
+else{
+    header('location:admin_homepage.php');
+}
 ?>

@@ -6,4 +6,9 @@
  * Time: 2:05 AM
  */
 $serverName="localhost";
-$dbusername="michael";
+$dbusername="root";
+$dbpassword="mike0001";
+$dbname="banking";
+mysql_connect($serverName,$dbusername,$dbpassword)/* or die('down;)*/;
+mysql_select_db($dbname) or die(mysql_error());
+?>

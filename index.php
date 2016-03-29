@@ -7,6 +7,7 @@
  */
 
 if(isset($_REQUEST['submitBtn'])){
+    include 'connect/dbconnect.php';
     $username=$_REQUEST['uname'];
 
     $salt="@g26jQsG&nh*&#8v";
