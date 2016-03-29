@@ -49,6 +49,7 @@ if (isset($_SESSION['customer_login']))
         <body>
         <div class="wrapper">
             <div class="header">
+                <div class="container-fluid">
                 <nav class="navbar navbar-default" role="navigation">
                     <div class="container">
                         <div class="navbar-header">
@@ -74,6 +75,7 @@ if (isset($_SESSION['customer_login']))
                         </div>
                     </div>
                 </nav>
+               </div>
 
             </div>
         </div>
