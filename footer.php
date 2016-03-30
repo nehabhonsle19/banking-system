@@ -1,10 +1,4 @@
 
-/**
- * Created by PhpStorm.
- * User: michaelspeed
- * Date: 3/30/16
- * Time: 2:03 AM
- */
     <div class="footer">
     <div class="container">
         <div class="row-fluid">

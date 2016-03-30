@@ -1,9 +1,3 @@
-/**
- * Created by PhpStorm.
- * User: michaelspeed
- * Date: 3/30/16
- * Time: 2:02 AM
- */
     <body>
     <div class="wrapper">
     <div class="header">
