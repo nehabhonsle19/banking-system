@@ -1,27 +1,29 @@
+<head>
+<script src="admin_navbar.js"></script>
+</head>
 <body>
-<div class="admin_nav">
-    <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-            <div class="container-fluid">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="#" name="top">OSCAR</a>
-                <div class="nav-collapse collapse">
-                    <div class="btn-group pull-right">
-                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="icon-user"></i>admin<span class="caret"></span>
-                        </a>
-                        <ul class="dropdowwn-menu">
-                            <li><a href="#"><i class="icon-wrench"></i> Settings</a> </li>
-                            <li class="divider"></li>
-                            <li><a href="#"><i class="icon-share"></i> Logout</a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-slide-dropdown">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">OSCAR Admin Panel</a>
         </div>
-    </div>
-</div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-slide-dropdown">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Change password</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
