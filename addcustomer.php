@@ -16,13 +16,14 @@
     <noscript><meta http-equiv="refresh" content="0;url=no-js.php"></noscript>
     <meta charset="UTF-8">
     <title>Add Customer</title>
-    <link rel="stylesheet" href="admin_login.css">
+    <link rel="stylesheet" href="addcustomer.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <div class='content_addstaff'>
     <?php include 'admin_navbar.php'?>
-    <div class='addstaff'>
+    <div class="container">
+    <div class='addcustomer'>
 
         <form action="add_customer.php" method="POST">
             <table align="center">
@@ -102,6 +103,7 @@
     </div>
 </div>
 </form>
+    </div>
 <?php include 'footer.php';?>
 </body>
 </html>
