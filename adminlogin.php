@@ -44,10 +44,10 @@ include 'connect/dbconnect.php';
 if(!isset($_SESSION['admin_login'])){
     if(isset($_REQUEST['SubmitBtn'])){
         $sql="SELECT * FROM admin WHERE id='1'";
-        $result=mysql_query($sql);
-        $rws= mysql_fetch_array($result);
-        $username= mysql_real_escape_string($_REQUEST['uname']);
-        $password= mysql_real_escape_string($_REQUEST['pwd']);
+        $result=mysqli_query($sql);
+        $rws= mysqli_fetch_array($result);
+        $username= mysqli_real_escape_string($_REQUEST['uname']);
+        $password= mysqli_real_escape_string($_REQUEST['pwd']);
         if($username==$rws[8] && $password==$rws[9]){
             $_SESSION['admin_login']=1;
          header('location:admin_homepage.php');}
