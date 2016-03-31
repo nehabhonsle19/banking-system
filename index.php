@@ -98,7 +98,7 @@ if (isset($_SESSION['customer_login']))
                                         </div>
                                         <div class="form-group">
                                             <label for="password" class="control-label">Password</label>
-                                            <input type="password" class="form-control" id="password", name="password" value="" required="" title="Please enter your password">
+                                            <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
                                             <span class="help-block"></span>
                                         </div>
                                         <div id="loginErrorMsg" class="alert alert-error hide">Wrong username of password</div>
