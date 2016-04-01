@@ -53,8 +53,6 @@ $_SESSION['name']=$name;
     <div class="customer_top_nav">
         <div class="text">Welcome <?php echo $_SESSION['name']?></div>
     </div>
-
-
     <?php
 
     $sql="SELECT * FROM passbook".$_SESSION['login_id'] ;
