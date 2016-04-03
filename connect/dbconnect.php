@@ -9,6 +9,6 @@ $serverName="localhost";
 $dbusername="root";
 $dbpassword="mike0001";
 $dbname="banking";
-mysql_connect($serverName,$dbusername,$dbpassword)/* or die('down;)*/;
-mysql_select_db($dbname) or die(mysql_error());
+mysqli_connect($serverName,$dbusername,$dbpassword)/* or die('down;)*/;
+mysqli_select_db($dbname) or die(mysql_error());
 ?>
