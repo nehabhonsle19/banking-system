@@ -10,7 +10,7 @@
 #include 'connect/dbconnect.php';
 
 #if (!isset($_SESSION['admin_login']))
- #   header('location:adminlogin.php');
+#    header('location:adminlogin.php');
 ?>
 
 <!DOCTYPE html>
